@@ -1,8 +1,8 @@
 $(function() {
 	$('.english').toggle();
 	$('#toggle-lng').bootstrapToggle({
-		off: '&#127464;&#127475; 中文',
-		on: '&#127482;&#127480; English'
+		off: '&#127482;&#127480; English',
+		on: '&#127464;&#127475; 中文'
 	});
 });
 $('#myform :checkbox').change(function() { 
