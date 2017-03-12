@@ -1,10 +1,10 @@
 @media all and (min-width:768px){
 	.table-container {float: left; margin: auto; width: 50%; padding: 1em;}
 	.map-container {float: left; margin: auto; width: 50%; padding: 1em;}
-	#myMap {width: 45vw; height: 45vh;}
+	#myMap {width: 45vw; height: 60vh;}
 }
 @media all and (max-width:767px){
 	.table-container {clear: both; margin: auto; padding-bottom: 2em; width: 100%;}
 	.map-container {clear: both; margin: auto; padding-bottom: 2em; width: 100%;}
-	#myMap {width: 100vw; height: 100vh;}
+	#myMap {width: 90vw; height: 50vh;}
 }
