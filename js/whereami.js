@@ -25,7 +25,7 @@ function loadMap() {
 		map = new Microsoft.Maps.Map(document.getElementById('myMap'), {
 			credentials: 'Am9Vjl9n5UajkUfSBWrKPus5HNYffqtTRHXK4758LkwSHXC9ekPkqRPoa-NVTZ6b',
 			center: new Microsoft.Maps.Location($("#latitude").html(), $("#longitude").html()),
-			zoom: 2
+			zoom: 4
 		});
 		var pushpin = new Microsoft.Maps.Pushpin(map.getCenter(), null);
 		map.entities.push(pushpin);
