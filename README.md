@@ -13,5 +13,5 @@ Uses jQuery, Bootstrap and Bing maps.
 JSON网际协定所在地数据受到于http://freegeoip.net/json/<br />
 JSON IP location data obtained from http://freegeoip.net/json/
 
-例http://stephenmccready.asia/tools/<br />
-Example: http://stephenmccready.asia/tools
+例https://stephenmccready.asia/tools/whereami.html<br />
+Example: https://stephenmccready.asia/tools/whereami.html
