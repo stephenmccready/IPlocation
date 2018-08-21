@@ -25,18 +25,26 @@
 	<div class="panel-body">
 		<div class="table-container">
 			<table class="table table-striped table-bordered table-condensed table-responsive">
-				<tr><th><span class="hanzi">字段</span><span class="english">Field</span></th><th><span class="hanzi">产值</span><span class="english">Value</span></th></tr>
 				<tr><td><span class="hanzi">网际协定</span><span class="english">IP</span></td><td><span id="ip"></span></td></tr>
-				<tr><td><span class="hanzi">国家代码</span><span class="english">Country Code</span></td><td><span id="country_code"></span></td></tr>
-				<tr><td><span class="hanzi">国名</span><span class="english">Country Name</span></td><td><span id="country_name"></span></td></tr>
-				<tr><td><span class="hanzi">区域代码</span><span class="english">Region Code</span></td><td><span id="region_code"></span></td></tr>
-				<tr><td><span class="hanzi">区域名</span><span class="english">Region Name</span></td><td><span id="region_name"></span></td></tr>
-				<tr><td><span class="hanzi">城市</span><span class="english">City</span></td><td><span id="city"></span></td></tr>
-				<tr><td><span class="hanzi">邮编</span><span class="english">Zip Code</span></td><td><span id="zip_code"></span></td></tr>
-				<tr><td><span class="hanzi">时区</span><span class="english">Time Zone</span></td><td><span id="time_zone"></span></td></tr>
-				<tr><td><span class="hanzi">纬度</span><span class="english">Latitude</span></td><td><span id="latitude"></span></td></tr>
+				<tr><td><span class="hanzi">因特网提供商</span><span class="english">ISP</span></td><td><span id="isp"></span></td></tr>
+				<tr><td><span class="hanzi">组织</span><span class="english">Organisation</span></td><td><span id="org"></span></td></tr>
+				<tr><td><span class="hanzi">主机</span><span class="english">Host</span></td><td><span id="hostname"></span></td></tr>
 				<tr><td><span class="hanzi">经度</span><span class="english">Longitude</span></td><td><span id="longitude"></span></td></tr>
-				<tr><td><span class="hanzi">大都会代码</span><span class="english">Metro Code</span></td><td><span id="metro_code"></span></td></tr>
+				<tr><td><span class="hanzi">纬度</span><span class="english">Latitude</span></td><td><span id="latitude"></span></td></tr>
+				<tr><td><span class="hanzi">邮政编码</span><span class="english">Postal Code</span></td><td><span id="postal_code"></span></td></tr>
+				<tr><td><span class="hanzi">城市</span><span class="english">City</span></td><td><span id="city"></span></td></tr>
+				<tr><td><span class="hanzi">国家代码</span><span class="english">Country Code</span></td><td><span id="country_code"></span></td></tr>
+				<tr><td><span class="hanzi">国名</span><span class="english">Country</span></td><td><span id="country_name"></span></td></tr>
+				<tr><td><span class="hanzi">大陆代码</span><span class="english">Continent Code</span></td><td><span id="continent_code"></span></td></tr>
+				<tr><td><span class="hanzi">区域名</span><span class="english">Region</span></td><td><span id="region"></span></td></tr>
+				<tr><td><span class="hanzi">区</span><span class="english">District</span></td><td><span id="district"></span></td></tr>
+				<tr><td><span class="hanzi">时区</span><span class="english">Time Zone</span></td><td><span id="timezone_name"></span></td></tr>
+				<tr><td><span class="hanzi">连接类型</span><span class="english">Connection Type</span></td><td><span id="connection_type"></span></td></tr>
+				<tr><td><span class="hanzi">自治系统编号</span><span class="english">ASN</span></td><td><span id="asn"></span></td></tr>
+				<tr><td><span class="hanzi">币种代码</span><span class="english">Currency Code</span></td><td><span id="currency_code"></span></td></tr>
+				<tr><td><span class="hanzi">货币</span><span class="english">Currency</span></td><td><span id="currency_name"></span></td></tr>
+				<tr class="hidden"><td><span class="hanzi">地位</span><span class="english">Status</span></td><td><span id="success"></span></td></tr>
+				<tr class="hidden"><td><span class="hanzi">缓存?</span><span class="english">Cached?</span></td><td><span id="cached"></span></td></tr>
 			</table>
 		</div>
 		<div class="map-container">
@@ -48,6 +56,6 @@
 <script src="js/whereami.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
-<script type='text/javascript' src='http://www.bing.com/api/maps/mapcontrol?branch=experimental&callback=loadMap' async defer></script>
+<script type='text/javascript' src='https://www.bing.com/api/maps/mapcontrol?branch=experimental&callback=loadMap' async defer></script>
 </body>
 </html>
