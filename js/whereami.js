@@ -10,18 +10,29 @@ $('#myform :checkbox').change(function() {
 	$('.english').toggle();
 });
 function loadMap() {
-	$.getJSON('http://freegeoip.net/json/', function(result) {
-		$("#ip").html(result.ip);
-		$("#country_code").html(result.country_code);
-		$("#country_name").html(result.country_name);
-		$("#region_code").html(result.region_code);
-		$("#region_name").html(result.region_name);
-		$("#city").html(result.city);
-		$("#zip_code").html(result.zip_code);
-		$("#time_zone").html(result.time_zone);
-		$("#latitude").html(result.latitude);
-		$("#longitude").html(result.longitude);
-		$("#metro_code").html(result.metro_code);
+	$.getJSON('https://api.ipify.org?format=json', function(result1) {
+		$("#ip").html(result1.ip);
+	});
+	$.getJSON('https://json.geoiplookup.io/'+$("#ip").html(),function(result2) {
+		$("#isp").html(result2.isp);
+		$("#org").html(result2.org);
+		$("#hostname").html(result2.hostname);
+		$("#longitude").html(result2.longitude);
+		$("#latitude").html(result2.latitude);
+		$("#postal_code").html(result2.postal_code);
+		$("#city").html(result2.city);
+		$("#country_code").html(result2.country_code);
+		$("#country_name").html(result2.country_name);
+		$("#continent_code").html(result2.continent_code);
+		$("#region").html(result2.region);
+		$("#district").html(result2.district);
+		$("#timezone_name").html(result2.timezone_name);
+		$("#connection_type").html(result2.connection_type);
+		$("#asn").html(result2.asn);	//autonomous system number
+		$("#currency_code").html(result2.currency_code);
+		$("#currency_name").html(result2.currency_name);
+		$("#success").html(result2.success);
+		$("#cached").html(result2.cached);
 		map = new Microsoft.Maps.Map(document.getElementById('myMap'), {
 			credentials: 'Am9Vjl9n5UajkUfSBWrKPus5HNYffqtTRHXK4758LkwSHXC9ekPkqRPoa-NVTZ6b',
 			center: new Microsoft.Maps.Location($("#latitude").html(), $("#longitude").html()),
